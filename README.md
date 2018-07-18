@@ -96,35 +96,35 @@ to get the following arguments output by the function  **parsing_trial()** :
 > *Kinematic*
 >> kinematic data
 >>> * structure: Kinematic{dist, cond}{trial, sub}
->>> <img src="data_struct_kinematic.jpg" alt="alt text" width="440">
+>>> <img src="doc_img/data_struct_kinematic.jpg" alt="alt text" width="440">
 >>>
 >>> * type: cell
 >
 > *Submoves*
 >> information of submovement
 >>> * structure: Submoves{dist, cond}{trial, sub}
->>> <img src="data_struct_submoves.jpg" alt="alt text" width="440">
+>>> <img src="doc_img/data_struct_submoves.jpg" alt="alt text" width="440">
 >>>
 >>> * type: cell
 >
 > *Counter*
 >> count the number of submovement type in each context with experimental distance and contition
 >>> * structure: Counter{sub, 1}{dist, cond}(trial, :)
->>> <img src="data_struct_counter.jpg" alt="alt text" width="440">
+>>> <img src="doc_img/data_struct_counter.jpg" alt="alt text" width="440">
 >>>
 >>> * type: cell
 >
 > *Measures*
 >> get the key position in each trial
 >>> * structure: Measures{sub, 1}{dist, cond}(trial, :)
->>> <img src="data_struct_measure.jpg" alt="alt text" width="440">
+>>> <img src="doc_img/data_struct_measure.jpg" alt="alt text" width="440">
 >>>
 >>> * type: cell
 >
 > *Amount*
 >> count the number of submovement in each context with experimental distance and contition
 >>> * structure: Amount{sub, 1}{dist, cond}(trial, :)
->>> <img src="data_struct_amount.jpg" alt="alt text" width="440">
+>>> <img src="doc_img/data_struct_amount.jpg" alt="alt text" width="440">
 >>>
 >>> * type: cell
 >
@@ -416,7 +416,7 @@ to get the following arguments output by the function **func_elliott()** :
 
 * <a name="operation_flow">**Operation Flow**</a>
 
-<img src="flow_parsing_submovement.jpg" alt="alt text" height="300">
+<img src="doc_img/flow_parsing_submovement.jpg" alt="alt text" height="300">
 
 <table>
     <thead>
@@ -556,7 +556,7 @@ typecounter =
 >>> **the last data point** for 1 V<sub>zero-crossing</sub> was found
 >>>
 >>> **2<sup>nd</sup> V<sub><0</sub>** for 2 V<sub>zero-crossing</sub> were found>
->> <img src="boundary.png" alt="alt text" width="440">
+>> <img src="doc_img/boundary.png" alt="alt text" width="440">
 >>
 >> fig.1. the boundary of types
 >
@@ -593,7 +593,7 @@ typecounter =
 >>> and if that point was still not found, let the final boundary to loc1 as dur
 >>>
 >>> dur >= 72 ms
->> <img src="type_i.png" alt="alt text" width="440">
+>> <img src="doc_img/type_i.png" alt="alt text" width="440">
 > Type II
 >> direction: V<sub>max</sub> to V<sub><0.3</sub> or V<sub><0</sub>
 >>
@@ -617,7 +617,7 @@ typecounter =
 >>> and if that point was not found, let the final boundary to loc1 as dur
 >>>
 >>> dur >= 72 ms
->> <img src="type_ii.png" alt="alt text" width="440">
+>> <img src="doc_img/type_ii.png" alt="alt text" width="440">
 > Type III
 >>direction: V<sub><0.3</sub> to the last data point
 >>
@@ -640,7 +640,7 @@ typecounter =
 >>
 >> dur:
 >>> time during the boundary
->> <img src="type_iii.png" alt="alt text" width="440">
+>> <img src="doc_img/type_iii.png" alt="alt text" width="440">
 > Type IV
 >> direction: V<0 to the last data point or 1st V<sub><0</sub> to 2<sup>nd</sup> V<sub><0</sub>
 >>
@@ -661,7 +661,7 @@ typecounter =
 >>
 >>dur:
 >>>time during the boundary
->> <img src="type_iv.png" alt="alt text" width="440">
+>> <img src="doc_img/type_iv.png" alt="alt text" width="440">
 
 ## Compared with the previous version 
 the old version was elliott0102.m created on 2018-01-02.
@@ -672,10 +672,10 @@ the old version was elliott0102.m created on 2018-01-02.
 >>
 >> significance level: *p* < .05
 
-> <img src="type_avg.png" alt="alt text" width="560">
+> <img src="doc_img/type_avg.png" alt="alt text" width="560">
 >
 >> type average
 
-><img src="amount_avg.png" alt="alt text" width="560">
+><img src="doc_img/amount_avg.png" alt="alt text" width="560">
 >
 >> amount average
